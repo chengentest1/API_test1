@@ -3,14 +3,16 @@ import os
 
 import time
 
+import sys
 import xlrd
 from xlutils.copy import copy
-
+#调用文件在不同的类中，问题解决了。如下：
+sys.path.append('..')
 
 
 
 class FileUtile:
-    def __init__(self,path):
+    def __init__(self,path='../data_resource/user_data.xlsx'):
         self.filepath=path
     def getTime(self):
         return time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))

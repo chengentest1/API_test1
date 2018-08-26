@@ -21,7 +21,8 @@ if __name__=="__main__":
     # kk = os.path.dirname(os.path.dirname(__file__))
     # filepath=kk+'/data_resource/user_data.xlsx'
     p=HttpRquests()
-    f=FileUtile(r'C:\Users\cheng\PycharmProjects\testAPI\data_resource\user_data.xlsx')
+    # f=FileUtile(r'C:\Users\cheng\PycharmProjects\testAPI\data_resource\user_data.xlsx')
+    f=FileUtile()
     h=f.read_excel_h_w()[0]
     w=f.read_excel_h_w()[1]
     for a in range(1,h):
